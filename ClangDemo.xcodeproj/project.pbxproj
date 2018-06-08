@@ -15,6 +15,8 @@
 		1CC4C16820C76B4400AE0241 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC4C16720C76B4400AE0241 /* main.m */; };
 		1CC4C17220C76B4500AE0241 /* ClangDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC4C17120C76B4500AE0241 /* ClangDemoTests.m */; };
 		1CC4C17D20C76B4500AE0241 /* ClangDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC4C17C20C76B4500AE0241 /* ClangDemoUITests.m */; };
+		1CC4C18D20C76B5D00AE0241 /* EOCEmpType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC4C18C20C76B5D00AE0241 /* EOCEmpType.m */; };
+		1CC4C19020C76DC600AE0241 /* EOCTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC4C18F20C76DC600AE0241 /* EOCTestClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		1CC4C17820C76B4500AE0241 /* ClangDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClangDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC4C17C20C76B4500AE0241 /* ClangDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClangDemoUITests.m; sourceTree = "<group>"; };
 		1CC4C17E20C76B4500AE0241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC4C18B20C76B5D00AE0241 /* EOCEmpType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCEmpType.h; sourceTree = "<group>"; };
+		1CC4C18C20C76B5D00AE0241 /* EOCEmpType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCEmpType.m; sourceTree = "<group>"; };
+		1CC4C18E20C76DC600AE0241 /* EOCTestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCTestClass.h; sourceTree = "<group>"; };
+		1CC4C18F20C76DC600AE0241 /* EOCTestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCTestClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		1CC4C15720C76B4300AE0241 /* ClangDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1CC4C18A20C76B4D00AE0241 /* EOCEmpType */,
 				1CC4C15820C76B4300AE0241 /* AppDelegate.h */,
 				1CC4C15920C76B4300AE0241 /* AppDelegate.m */,
 				1CC4C15B20C76B4300AE0241 /* ViewController.h */,
@@ -130,6 +137,17 @@
 				1CC4C17E20C76B4500AE0241 /* Info.plist */,
 			);
 			path = ClangDemoUITests;
+			sourceTree = "<group>";
+		};
+		1CC4C18A20C76B4D00AE0241 /* EOCEmpType */ = {
+			isa = PBXGroup;
+			children = (
+				1CC4C18B20C76B5D00AE0241 /* EOCEmpType.h */,
+				1CC4C18C20C76B5D00AE0241 /* EOCEmpType.m */,
+				1CC4C18E20C76DC600AE0241 /* EOCTestClass.h */,
+				1CC4C18F20C76DC600AE0241 /* EOCTestClass.m */,
+			);
+			path = EOCEmpType;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +282,8 @@
 			files = (
 				1CC4C15D20C76B4300AE0241 /* ViewController.m in Sources */,
 				1CC4C16820C76B4400AE0241 /* main.m in Sources */,
+				1CC4C19020C76DC600AE0241 /* EOCTestClass.m in Sources */,
+				1CC4C18D20C76B5D00AE0241 /* EOCEmpType.m in Sources */,
 				1CC4C15A20C76B4300AE0241 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

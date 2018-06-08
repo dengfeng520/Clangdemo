@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <objc/runtime.h>
 
 @interface ViewController ()
 
@@ -17,6 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSObject *empclass = [[NSClassFromString(@"EOCEmpType") alloc] init];
+    SEL pushdata = NSSelectorFromString(@"SetPushNewsData:");
+
+    if ([empclass respondsToSelector:pushdata]) {
+
+        IMP aIMP = [empclass methodForSelector:pushdata];
+
+        void (*setter)(id, SEL, NSString*) = (void(*)(id, SEL, NSString*))aIMP;
+
+        setter(empclass, pushdata, @"测试测试");
+    }
+    
 }
 
 
