@@ -19,8 +19,7 @@ int *getMin(int i,int j) {
     return pointer;
 }
 
-void pointer() {
-    
+void pointer(void) {
     //============================== 普通指针
     int a = 111;
     //指针赋值

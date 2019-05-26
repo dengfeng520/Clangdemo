@@ -11,6 +11,6 @@
 
 #include <stdio.h>
 
-void pointer();
+void pointer(void);
 
 #endif /* PointerTest_h */

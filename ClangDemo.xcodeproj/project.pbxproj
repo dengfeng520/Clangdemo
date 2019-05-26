@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C47C995229A6B73000625D0 /* StructClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47C994229A6B73000625D0 /* StructClass.m */; };
 		1CC4C15A20C76B4300AE0241 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC4C15920C76B4300AE0241 /* AppDelegate.m */; };
 		1CC4C15D20C76B4300AE0241 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC4C15C20C76B4300AE0241 /* ViewController.m */; };
 		1CC4C16020C76B4300AE0241 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC4C15E20C76B4300AE0241 /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		1CC4C17D20C76B4500AE0241 /* ClangDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC4C17C20C76B4500AE0241 /* ClangDemoUITests.m */; };
 		1CC4C18D20C76B5D00AE0241 /* EOCEmpType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC4C18C20C76B5D00AE0241 /* EOCEmpType.m */; };
 		1CF6F0FB229A382500F7008C /* PointerTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 1CF6F0FA229A382500F7008C /* PointerTest.c */; };
-		1CF6F0FF229A57E100F7008C /* StructClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF6F0FE229A57E100F7008C /* StructClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C47C993229A6B73000625D0 /* StructClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StructClass.h; sourceTree = "<group>"; };
+		1C47C994229A6B73000625D0 /* StructClass.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = StructClass.m; sourceTree = "<group>"; };
 		1CC4C15520C76B4300AE0241 /* ClangDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClangDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC4C15820C76B4300AE0241 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CC4C15920C76B4300AE0241 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1CC4C15B20C76B4300AE0241 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1CC4C15C20C76B4300AE0241 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1CC4C15C20C76B4300AE0241 /* ViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = ViewController.m; sourceTree = "<group>"; };
 		1CC4C15F20C76B4300AE0241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CC4C16120C76B4400AE0241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CC4C16420C76B4400AE0241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,9 +59,7 @@
 		1CC4C18B20C76B5D00AE0241 /* EOCEmpType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCEmpType.h; sourceTree = "<group>"; };
 		1CC4C18C20C76B5D00AE0241 /* EOCEmpType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCEmpType.m; sourceTree = "<group>"; };
 		1CF6F0F9229A382500F7008C /* PointerTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointerTest.h; sourceTree = "<group>"; };
-		1CF6F0FA229A382500F7008C /* PointerTest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PointerTest.c; sourceTree = "<group>"; };
-		1CF6F0FD229A57E100F7008C /* StructClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StructClass.h; sourceTree = "<group>"; };
-		1CF6F0FE229A57E100F7008C /* StructClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StructClass.m; sourceTree = "<group>"; };
+		1CF6F0FA229A382500F7008C /* PointerTest.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = PointerTest.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,8 +165,8 @@
 		1CF6F0FC229A52F600F7008C /* CStruct */ = {
 			isa = PBXGroup;
 			children = (
-				1CF6F0FD229A57E100F7008C /* StructClass.h */,
-				1CF6F0FE229A57E100F7008C /* StructClass.m */,
+				1C47C993229A6B73000625D0 /* StructClass.h */,
+				1C47C994229A6B73000625D0 /* StructClass.m */,
 			);
 			path = CStruct;
 			sourceTree = "<group>";
@@ -304,7 +304,7 @@
 				1CC4C15D20C76B4300AE0241 /* ViewController.m in Sources */,
 				1CC4C16820C76B4400AE0241 /* main.m in Sources */,
 				1CF6F0FB229A382500F7008C /* PointerTest.c in Sources */,
-				1CF6F0FF229A57E100F7008C /* StructClass.m in Sources */,
+				1C47C995229A6B73000625D0 /* StructClass.m in Sources */,
 				1CC4C18D20C76B5D00AE0241 /* EOCEmpType.m in Sources */,
 				1CC4C15A20C76B4300AE0241 /* AppDelegate.m in Sources */,
 			);

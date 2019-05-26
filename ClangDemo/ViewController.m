@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <objc/runtime.h>
 #include "PointerTest.h"
+#import  "StructClass.h"
 
 @interface ViewController ()
 
@@ -34,6 +35,8 @@
     
     // 指针
     pointer();
+    // 结构体
+    useStructFunc();
 }
 
 
