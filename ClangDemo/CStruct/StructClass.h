@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 void useStructFunc(void);
 
+void useTeacherFunc(void);
+
 @end
 
 NS_ASSUME_NONNULL_END

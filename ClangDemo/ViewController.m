@@ -37,6 +37,7 @@
     pointer();
     // 结构体
     useStructFunc();
+    useTeacherFunc();
 }
 
 

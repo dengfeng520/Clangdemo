@@ -7,6 +7,7 @@
 //
 
 #import "StructClass.h"
+
 //MARK: - =================================== 结构体的申明
 // 结构体名 + 结构体变量 + 结构体成员
 struct personAbout {
@@ -43,11 +44,10 @@ typedef struct studentFrist: personAbout {
     }
 }studentFrist;
 
-
 @implementation StructClass
 
 void useStructFunc(void) {
-    
+   
     // 结构体赋值 方法一
     int age = 17;
     struct personAbout person = {"李雷",&age};
@@ -75,11 +75,29 @@ void useStructFunc(void) {
 
     // 结构体指针
     studentFrist *stuPoiner = &stuFrist;
-    printf("\nstuPoiner Number ====%d",stuPoiner->number);
+    int studentNumber = stuPoiner->number;
+    printf("\nstuPoiner Number ====%d",studentNumber);
     printf("\nstuPoiner Name ====%s",stuPoiner->name);
     printf("\nstuPoiner age ====%d",*(stuPoiner->age));
 
     
 }
+
+// 结构体位域
+void useTeacherFunc(void) {
+    
+    struct teacher {
+        unsigned int a: 1;
+        unsigned int b: 2;
+        unsigned int c: 3;
+    }tc,*ptc;
+    printf("\n\nteacher size =======%lu",sizeof(teacher));
+    ptc = &tc;
+    ptc -> a = 1;
+    ptc -> b = 4;
+    ptc -> c = 5;
+    printf("ptc -> b======%d",ptc -> b);
+}
+
 
 @end
