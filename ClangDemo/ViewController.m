@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <objc/runtime.h>
+#include "PointerTest.h"
 
 @interface ViewController ()
 
@@ -31,6 +32,8 @@
         setter(empclass, pushdata, @"测试测试");
     }
     
+    // 指针
+    pointer();
 }
 
 

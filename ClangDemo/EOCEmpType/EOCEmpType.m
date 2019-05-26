@@ -10,18 +10,15 @@
 
 @implementation EOCEmpType
 
-+(void)initialize
-{
++ (void)initialize {
     NSLog(@"==========EOCEmpType new");
 }
 
--(void)SetPushNewsData:(NSString *)NewsData
-{
+- (void)SetPushNewsData:(NSString *)NewsData {
     NSLog(@"=============%@",NewsData);
 }
 
--(void)testdata
-{
+- (void)testdata {
     printf("===============EOCEmpType testdata");
 }
 
